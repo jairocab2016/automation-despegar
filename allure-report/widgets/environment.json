@@ -1,7 +1,0 @@
-[ {
-  "values" : [ "{\"maxInstances\":5,\"browserName\":\"chrome\",\"chromeOptions\":{\"args\":[\"start-maximized\"]}}" ],
-  "name" : "capabilities"
-}, {
-  "values" : [ "[\"/home/jairo/automation-despegar/specs/vuelo.spec_2.js\"]" ],
-  "name" : "spec files"
-} ]

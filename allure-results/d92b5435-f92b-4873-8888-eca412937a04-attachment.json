@@ -1,4 +1,0 @@
-{
-    "using": "xpath",
-    "value": "(//a[contains(@class, \"sbox-search\")])[1]"
-}

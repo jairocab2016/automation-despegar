@@ -1,4 +1,0 @@
-{
-    "using": "xpath",
-    "value": "(//a[@tooltip-component=\"buy-button-tooltip\"])[45]"
-}
