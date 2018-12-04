@@ -1,1 +1,5 @@
 node_modules
+allure_results
+allure_report
+errorShots
+package-lock.json

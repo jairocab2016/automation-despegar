@@ -1,0 +1,37 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Vuelos2",
+    "children" : [ {
+      "name" : "Busqueda de vuelo más caro - Consigna 2",
+      "uid" : "6a72bf76df3e390e",
+      "parentUid" : "0c5c460c471f10e43b5ced268fa3a064",
+      "status" : "passed",
+      "time" : {
+        "start" : 1543895601659,
+        "stop" : 1543895646384,
+        "duration" : 44725
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "0c5c460c471f10e43b5ced268fa3a064"
+  }, {
+    "name" : "Vuelos",
+    "children" : [ {
+      "name" : "Busqueda de vuelo - Consigna 1",
+      "uid" : "5ac325e5d0c4e264",
+      "parentUid" : "4a6a50015b9d07c2cad14a614da9ed79",
+      "status" : "passed",
+      "time" : {
+        "start" : 1543895601689,
+        "stop" : 1543895632208,
+        "duration" : 30519
+      },
+      "flaky" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "4a6a50015b9d07c2cad14a614da9ed79"
+  } ],
+  "name" : "suites"
+}

@@ -1,0 +1,29 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Busqueda de vuelo más caro - Consigna 2",
+    "uid" : "6a72bf76df3e390e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1543895601659,
+      "stop" : 1543895646384,
+      "duration" : 44725
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "Busqueda de vuelo - Consigna 1",
+    "uid" : "5ac325e5d0c4e264",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1543895601689,
+      "stop" : 1543895632208,
+      "duration" : 30519
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  } ],
+  "name" : "behaviors"
+}

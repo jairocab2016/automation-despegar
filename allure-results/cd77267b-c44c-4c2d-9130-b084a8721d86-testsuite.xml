@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1543899106876' stop='1543899148307'>
+    <name>Consigna 2 - Vuelos</name>
+    <title>Consigna 2 - Vuelos</title>
+    <test-cases>
+        <test-case start='1543899106879' status='broken' stop='1543899148305'>
+            <name>Busqueda de vuelo - precio más caro</name>
+            <title>Busqueda de vuelo - precio más caro</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"maxInstances":5,"browserName":"chrome","chromeOptions":{"args":["start-maximized"]}}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/home/jairo/automation-despegar/specs/vuelo2.spec.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1543899106884' status='broken' stop='1543899148305'>
+                    <name>POST /session/2cf588befcc7a3551586b5590f208870/url</name>
+                    <title>POST /session/2cf588befcc7a3551586b5590f208870/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4528e776-c53c-47fa-8a6f-a3a82117122e-attachment.json' type='application/json' size='51'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>connect ECONNREFUSED 127.0.0.1:9515</message>
+                <stack-trace>Error: connect ECONNREFUSED 127.0.0.1:9515
+                    at new RuntimeError (node_modules/webdriverio/build/lib/utils/ErrorHandler.js:143:12)
+                    at Request._callback (node_modules/webdriverio/build/lib/utils/RequestHandler.js:332:43)
+                    at self.callback (node_modules/request/request.js:185:22)
+                    at Request.emit (events.js:182:13)
+                    at Request.EventEmitter.emit (domain.js:441:20)
+                    at Request.onRequestError (node_modules/request/request.js:881:8)
+                    at ClientRequest.emit (events.js:187:15)
+                    at ClientRequest.EventEmitter.emit (domain.js:441:20)
+                    at Socket.socketErrorListener (_http_client.js:399:9)
+                    at Socket.emit (events.js:182:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

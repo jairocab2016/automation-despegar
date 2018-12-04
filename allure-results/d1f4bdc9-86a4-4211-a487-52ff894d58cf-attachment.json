@@ -1,0 +1,4 @@
+{
+    "using": "xpath",
+    "value": "//span[text()=\"Mayo\"]/../..//span[text()=\"1\"]"
+}
