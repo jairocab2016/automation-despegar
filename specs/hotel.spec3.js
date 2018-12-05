@@ -1,17 +1,19 @@
 import HotelHome from '../pageobjects/hoteles/hotel.home'
+import HotelResult  from '../pageobjects/hoteles/hotel.result'
 
 describe('Consigna 3 - Hoteles', () => {
-  it('Busqueda de vuelo', () => {
+  it('Buscar hotel más barato', () => {
     HotelHome.open()
     HotelHome.ingresarDestino('Montevideo')
-    HotelHome.ingresarFechaPartida('10-12-2018')
-    HotelHome.ingresarFechaRegreso('13-12-2018')
-    console.log(HotelHome.fechaIngreso(+10));
-    console.log(HotelHome.fechaIngreso(+13));
-    HotelHome.seleccionarAdultos()
-    HotelHome.seleccionarMenores()
+    HotelHome.ingresarFechaEntrada(HotelHome.fechaSumarDias(+10))
+    HotelHome.ingresarFechaSalida(HotelHome.fechaSumarDias(+13))
+    HotelHome.seleccionarAdultos(3)
+    HotelHome.seleccionarMenores(1)
     HotelHome.confirmarPasajeros()
     HotelHome.buscarHotel()
-    
+    expect(browser.getTitle()).to.equals('Alojamientos - Despegar.com')
+    HotelResult.seleccionarHotelMasBarato()
+    HotelResult.ingresarACheckout()    
+    HotelResult.validarHabitacion()
   })
 })
