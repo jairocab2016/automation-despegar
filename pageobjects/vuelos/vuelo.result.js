@@ -17,6 +17,7 @@ class VueloResult extends Page {
 
     let valorMax = Math.max.apply(null, preciosValor)
     let posValorMax = preciosValor.indexOf(valorMax)
+    browser.pause(1000)
     browser.scroll(`(//a[@tooltip-component="buy-button-tooltip"])[${posValorMax + 1}]`)
     browser.element(`(//a[@tooltip-component="buy-button-tooltip"])[${posValorMax + 1}]`).click()
   }

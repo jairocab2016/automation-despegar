@@ -3,14 +3,14 @@ import Page from '../page'
 class HotelResult extends Page {
 
   seleccionarCincoEstrellas() {
-    browser.waitForVisible('(//span[@data-ga-el="stars-5"])[1]', 5000)
+    browser.waitForVisible('(//span[@data-ga-el="stars-5"])[1]', 10000)
     browser.scroll('(//span[@data-ga-el="stars-5"])[1]')
     browser.element('(//span[@data-ga-el="stars-5"])[1]').click()
   }
 
   seleccionarHotelMasBarato() {
     this.seleccionarCincoEstrellas()
-    browser.waitForVisible('//li[@class="hf-pricebox-price col -sm-12 hf-robot-price -eva-3-tc-gray-1"]', 5000)
+    browser.waitForVisible('//li[@class="hf-pricebox-price col -sm-12 hf-robot-price -eva-3-tc-gray-1"]', 10000)
     let valores = browser.elements('//li[@class="hf-pricebox-price col -sm-12 hf-robot-price -eva-3-tc-gray-1"]')
     let valoresHoteles = []
     for (let i = 0; i < valores.value.length; i++) {
@@ -20,6 +20,7 @@ class HotelResult extends Page {
 
     let valorMin = Math.min.apply(null, valoresHoteles)
     let posValorMin = valoresHoteles.indexOf(valorMin)
+    browser.pause(1000)
     browser.click(`(//li[@class="hf-pricebox-price col -sm-12 hf-robot-price -eva-3-tc-gray-1"])[${posValorMin + 1}]`)
   }
 
@@ -33,7 +34,7 @@ class HotelResult extends Page {
   }
 
   validarHabitacion() {
-    browser.waitForVisible('//em[text()="Ver habitaciones"]', 5000)
+    browser.waitForVisible('//em[text()="Ver habitaciones"]', 10000)
     browser.element('//em[text()="Ver habitaciones"]').click()
     browser.element('//div[contains(@class, "hf-room--selected")]').isVisible()
   }
